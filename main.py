@@ -40,7 +40,7 @@ def main():
 
 	# model
 	model = build_model()
-	model.fit(train_images, train_labels, epochs=10, batch_size=32)
+	model.fit(train_images, train_labels, epochs=5, batch_size=64)
 	test_loss, test_acc = model.evaluate(test_images, test_labels)
 	print('Test accuracy: ', round(test_acc, 3) * 100, '%')
 
